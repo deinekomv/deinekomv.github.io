@@ -1,0 +1,10 @@
+#info_text {
+    border-left: 30px;
+    border-color: darkgray;
+    padding-left: 40px;
+    border-radius: 2;
+}
+
+.wrapp_content{
+    margin: auto 10px;
+}
