@@ -27,11 +27,17 @@
         <div class="code_w d-inline-flex p-2 bg-secondary text-white">
           <p>
               <span>class Animal</span><br>
+
+                <span class="mt-0">def initialize </span><br>
+                  <span class="mt-1">@name = "Коля"</span><br>
+                <span class="mt-0"> end </span><br>
+
                 <span class="mt-0">def run </span><br>
-                  <span class="mt-1">puts "Уже бегу"</span><br>
+                  <span class="mt-1">puts "Уже бегу к тебе ${@name}"</span><br>
                 <span class="mt-0"> end </span><br>
               <span>end </span><br>
               <br>
+              
               <span>aa = Animal.new </span><br>
               <span>aa.run </span><br>
           </p>
