@@ -35,11 +35,54 @@
                 <span class="mt-0">def run </span><br>
                   <span class="mt-1">puts "Уже бегу к тебе ${@name}"</span><br>
                 <span class="mt-0"> end </span><br>
+
               <span>end </span><br>
-              <br>
-              
+              <br>              
               <span>aa = Animal.new </span><br>
               <span>aa.run </span><br>
+          </p>
+        </div>
+        <br>
+        <div class="code_w d-inline-flex p-2 bg-secondary text-white">
+          <p>
+              <span>class Book</span><br>
+
+                <span class="mt-0">def initialize </span><br>
+                  <span class="mt-1">@hh = {}</span><br>
+                  <span class="mt-1">@last_persson = ""</span><br>
+                <span class="mt-0"> end </span><br>
+                <br>
+                <span class="mt-0">def add_persson options </span><br>
+                  <span class="mt-1">@last_persson = options[:name]</span><br>
+                  <br>
+                  <span class="mt-1"># добавляем пару в хеш</span><br>
+                  <span class="mt-1">puts 'Alredy exists!' if @hh[options[:name]]</span><br>
+                  <br>
+                  <span class="mt-1">@hh[options[:name]]= options[:age]</span><br>
+                <span class="mt-0"> end </span><br>
+                <br>
+
+                <span class="mt-0">def show_all </span><br>
+                  <span class="mt-1"># показать хеш</span><br>
+                  <span class="mt-1">@hh.key.seach do|key| </span><br>
+                    <span class="mt-2">puts "Name: #{key}, age: #{age}"</span><br>
+                  <span class="mt-1"> end </span><br>
+                <span class="mt-0"> end </span><br>
+
+                <span class="mt-0">def last_persson</span><br>
+                  <span class="mt-1">@last_persson</span><br>
+                <span class="mt-0"> end </span><br>
+              
+              <span>end </span><br>
+              <br>              
+              
+              <span>b = Book.new</span>
+              <span>b.add_persson : name => 'Walt', :age => 50</span><br>              
+              <span>b.add_persson : name => 'Jessie', :age => 25</span><br>
+              <br>
+              <span>b.show_all</span><br>
+              <br>
+              <span>puts "Last person: #{b.last_persson}"</span><br>
           </p>
         </div>
     </div>
