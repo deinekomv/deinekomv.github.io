@@ -8,3 +8,16 @@
 .wrapp_content{
     margin: auto 10px;
 }
+
+
+.mt-0 {
+    margin-top: 10px;
+  }
+  
+.ml-1 {
+margin-left: 10px;
+}
+
+.ml-2 {
+margin-left: 20px;
+}
